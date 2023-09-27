@@ -3,13 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form</title>
 </head>
 <body>
-    <div>
-        <h1>Style 2</h1>
-        <h2>페이스북 하기 싫다</h2>
-        <h3>종강하고 싶다</h3>
-    </div>
+    <h1>HTML Form</h1>
+    <form action="">
+        <fieldset style='width: 200px;'>
+            <legend>사용자 정보입력</legend>
+            <label for="uname">이름:</label><br>
+            <input type="text" id="uname" name="uname" placeholder="이름을 입력" required><br>
+
+            <label for="email">이메일:</label><br>
+            <input type="text" id="email" name="email"><br>
+
+            <label for="livin">주거지:</label>
+            <select name="livin" id="livin">
+                <optgroup label="수도권">
+                    <option value="1">서울</option>
+                    <option value="2">인천</option>
+                    <option value="3"selected>경기</option>
+                </optgroup>
+                <optgroup label="비수도권">
+                    <option value="4">광주</option>
+                    <option value="5">대구</option>
+                    <option value="6">대전</option>
+                    <option value="7">부산</option>
+                    <option value="8">울산</option>
+                    <option value="9">그외</option>
+                </optgroup>
+            </select><br>
+        </fieldset>
+
+        <fieldset style='width: 200px;'>
+            <legend>설문조사</legend>
+            <label for="gender">성별</label>
+            <input type="radio" id="radiobutton" name="gender">남
+            <input type="radio" id="radiobutton" name="gender">여<br>
+            <br>
+            
+            <label for="date">날짜</label>
+            <input type="date" min="2023-01-01" name="date"><br>
+            <br>
+
+            <label for="food">좋아하는 음식</label><br>
+            <input type="checkbox" id="food" name="food" value="1" checked>한식
+            <input type="checkbox" id="food" name="food" value="2" >중식
+            <input type="checkbox" id="food" name="food" value="3" >일식<br>
+            <input type="checkbox" id="food" name="food" value="4" >양식
+            <input type="checkbox" id="food" name="food" value="5" >분식<br>
+            <br>
+
+            <label for="color">좋아하는 색</label>
+            <input type="color" name="color">
+        </fieldset>
+
+        <input type="submit" value="저장">
+        <input type="reset" value="취소">
+    </form><br>
+
+    <form action="">
+        후기<br>
+        <textarea name="review" id="review" cols="30" rows="5"></textarea><br>
+        <input type="submit" value="저장">
+        <input type="reset" value="취소">
+    </form>
+    
 </body>
 </html>
