@@ -92,7 +92,7 @@ a:hover {
         width: auto;
         position: relative;
     }
-    #main {
+    #maincontents {
         margin-right: 0;
     }
 }
@@ -102,7 +102,7 @@ a:hover {
         width: auto;
         float: none;
     }
-    #main {
+    #maincontents {
         margin: 0;
     }
 }
